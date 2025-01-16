@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: green;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            font-family: Verdana;
+        }
+
+        .main-container {
+            display: flex; /* Align both sets of containers horizontally */
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align content to the top */
+            align-items: flex-start; /* Align content to the left */
+            padding: 20px;
+        }
+
+        section {
+            padding: 1rem;
+            margin: 10px;
+            background: aqua;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for the new containers with images on top and text below */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Wrap the images */
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-container .container-item {
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .image-container .container-item img {
+            width: 100%;
+            border-radius: 8px;
+            max-height: 300px; /* Limit the image height */
+            object-fit: cover;
+        }
+
+        /* Style for text under images */
+        .image-container .container-item p {
+            font-size: 16px; /* Set font size */
+            font-weight: bold; /* Make text bold */
+            color: #007BFF; /* Change text color */
+            margin-top: 10px; /* Space between image and text */
+            padding: 5px;
+            background-color: #fff; /* Add a background color to the text */
+            border-radius: 4px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        footer {
+            background: #007BFF;
+            color: white;
+            padding: 0.5rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Andrei's Website</h1>
+    </header>
+
+    <div class="main-container">
+        <!-- First set of containers (Your original sections) -->
+        <div class="container">
+            <section id="home">
+                <h2><a href="home.html">Home</a></h2>
+            </section>
+
+            <section id="myresume">
+                <h2><a href="myresume.html">My Resume</a></h2>
+            </section>
+
+            <section id="myself">
+                <h2><a href="myself.html">Myself</a></h2>
+            </section>
+
+            <section id="myfamily">
+                <h2><a href="myfamily.html">My Family</a></h2>
+            </section>
+
+            <section id="myfavorites">
+                <h2><a href="myfavorites.html">My Favorites</a></h2>
+            </section>
+        </div>
+
+        <!-- New set of 8 containers with images on top and text below -->
+        <div class="image-container">
+            <div class="container-item">
+                <img src="4a471a8f5d6d4b33753a43e6a2597e2b.jpg" alt="Image 1">
+                <p>Favorite Food </p>
+            </div>
+            <div class="container-item">
+                <img src="psdgc5fxfzar3cpyvwqs.jpg" alt="Image 2">
+                <p>Favorite Sports </p>
+            </div>
+            <div class="container-item">
+                <img src="th.jpg" alt="Image 3">
+                <p>Favorite Movies </p>
+            </div>
+            <div class="container-item">
+                <img src="th (1).jpg" alt="Image 4">
+                <p>Favorite Band </p>
+            </div>
+            <div class="container-item">
+                <img src="th (2).jpg" alt="Image 5">
+                <p>Favorite Instruments </p>
+            </div>
+            <div class="container-item">
+                <img src="th (3).jpg" alt="Image 6">
+                <p>Favorite Hobbies </p>
+            </div>
+            <div class="container-item">
+                <img src="th (4).jpg" alt="Image 7">
+                <p>Favorite Seasons </p>
+            </div>
+            <div class="container-item">
+                <img src="GettyImages-872401712-bd326b640f7d43b68620fd25d7b44071.jpg" alt="Image 8">
+                <p>Favorite Pet</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
